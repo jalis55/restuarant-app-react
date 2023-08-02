@@ -1,6 +1,11 @@
+
+import NavigationComponent from "./NavigationComponent";
+
 const HeaderComponent = () => {
   return (
-    <div>HeaderComponent</div>
+    <div>
+        <NavigationComponent/>
+    </div>
   )
 }
 
