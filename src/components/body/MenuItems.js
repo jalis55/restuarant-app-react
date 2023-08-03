@@ -1,11 +1,11 @@
 import React from 'react'
 import {Card,CardImg,CardImgOverlay,CardTitle,CardText} from 'reactstrap'
 
-const MenuItems = ({menu}) => {
+const MenuItems = ({menu,onSelectedDish}) => {
     
   return (
 <div>
-  <Card inverse style={{padding:10,margin:10}}>
+  <Card inverse style={{padding:10,margin:10,cursor:"pointer"}} onClick={()=>onSelectedDish(menu)}>
     <CardImg
       alt={menu.name}
       src={menu.image}
